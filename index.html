@@ -7,6 +7,9 @@
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Poppins&display=swap" rel="stylesheet">
 
+  <!-- Animate on Scroll Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="icon" type="images/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   
@@ -25,8 +28,8 @@
       <p><a href="#" class="btn">Get Started For Free</a></p>
     </section>
     
-    <section class="cover">
-      <img src="images/screen-mockups.svg" alt="screen-mockups">
+    <section class="cover" data-aos="zoom-in-up" data-aos-duration="2000">
+      <img class="fade" src="images/screen-mockups.svg" alt="screen-mockups">
     </section>
 
     <section class="numbers">
@@ -42,49 +45,40 @@
       </div>
     </section>
 
-<!--  <img src="images/bg-section-bottom-mobile-1.svg" alt="">
- <img src="images/bg-section-bottom-mobile-2.svg" alt="">
-
- 
- <img src="images/bg-section-top-mobile-1.svg" alt="">
- <img src="images/bg-section-top-mobile-2.svg" alt=""> -->
-
-
     <section class="content"> 
-       <img src="images/bg-section-top-desktop-1.svg" alt="" class="full-width">
+       <div class="growTop"></div>
        <div class="grow info-columns">
-          <div class="column pad-right">
+          <div class="column pad-right" data-aos="zoom-in-left" data-aos-duration="2000">
             <h2>Grow Together</h2>
             <p>Generate meaningful discussions with your audience and build a strong, loyal community.  Think of the insightful conversations you miss out on with a feedback form.</p>
           </div>
-          <div class="column pad-left">
+          <div class="column pad-left" data-aos="fade-in" data-aos-duration="2000">
             <img src="images/illustration-grow-together.svg" alt="" class="full-width">
           </div>         
       </div>
-      <img src="images/bg-section-bottom-desktop-1.svg" alt="" class="full-width">
+      <div class="growBtm"></div>
 
       <div class="flow info-columns">
-        <div class="column pad-right">
+        <div class="column pad-right" data-aos="fade-in" data-aos-duration="2000">
           <img src="images/illustration-flowing-conversation.svg" alt="" class="full-width">
         </div>
-        <div class="column pad-left">
+        <div class="column pad-left"  data-aos="zoom-in-right" data-aos-duration="2000">
           <h2>Flowing Conversations</h2>
-          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have   just-in-time loading for a more natural flow.</p>
+          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have just-in-time loading for a more natural flow.</p>
         </div>
       </div>
 
-      <img src="images/bg-section-top-desktop-2.svg" alt="" class="full-width">
+      <div class="usersTop"></div>
       <div class="users info-columns">
-        <div class="column pad-right">
+        <div class="column pad-right" data-aos="zoom-in-left" data-aos-duration="2000">
           <h2>Your Users</h2>
           <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, once signed in to your app, your users can start chatting immediately.</p>
         </div>
-        <div class="column pad-left">
+        <div class="column pad-left" data-aos="fade-in" data-aos-duration="2000">
           <img src="images/illustration-your-users.svg" alt="" class="full-width">
         </div>
       </div> 
-
-      <img src="images/bg-section-bottom-desktop-2.svg" alt="" class="full-width">
+      <div class="usersBtm"></div>
     </section>
 
     <section class="cta">
@@ -94,11 +88,10 @@
   </main>
 
   <footer>
-    <img src="images/bg-footer-top-desktop.svg" alt="" class="full-width">
-    <!-- <img src="images/bg-footer-top-mobile.svg" alt=""> -->
+    <div class="footerTop"></div>
     <div class="footer footer-columns">
       <div class="column pad-right">
-        <h2><img src="images/icon-messages.svg" alt="">Huddle</h2>
+        <h2><img src="images/icon-messages-white.svg" alt="">Huddle</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia vestibulum a, ultrices quis sem.</p>
 
         <ul class="contact">
@@ -125,6 +118,12 @@
       </div>
     </div>
   </footer>
-<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <!-- Ion Icons Js -->
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+  <!-- Animate on Scroll JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+  AOS.init();
+</script>
 </body>
 </html>

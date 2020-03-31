@@ -64,21 +64,38 @@ p {
 .btn, .btn-outline {
 	border-radius: 50px;
 	border: none;
+	outline: none;
 	-webkit-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.2);
 	-moz-box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.2);
 	box-shadow: 5px 5px 12px 0px rgba(0,0,0,0.2);
 	font-weight: 700;
 	text-decoration: none;
-	transition: all 1s ease-in-out;
 }
 .btn {
-	/*padding: 25px 100px;*/
 	padding: 4% 20%;
 	background-color: #FF52BF;
+	border: 1px solid #FF52BF;
 	color: #fff;
 	font-size: 1rem;
 }
-
+.btn:hover { 
+	background: #EB0098;
+	border: 1px solid #FF52BF;
+	background-color: #fff;
+	color: #FF52BF;
+}
+.btn:active {
+/*  border: 1px solid #FF52BF;
+	background-color: #fff;
+	color: #FF52BF;
+  box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.1);
+  transform: translateY(4px);*/
+  	border: 1px solid #EB0098;
+	color: #EB0098;
+  box-shadow: 5px 2px 12px 0px rgba(0,0,0,0.1);
+  transform: translateY(2px);
+  font-weight: 700;
+}
 .btn-outline {
 	padding: 10px 30px;
 	border: 1px solid #FF52BF;
@@ -89,15 +106,17 @@ p {
   font-size: 1rem;
   font-weight: 400;
 }
-.btn:hover { 
-	background: #EB0098;
-	font-size: 1.1rem;
-  
+.btn-outline:hover {
+	border: 1px solid #EB0098;
+	color: #EB0098;
 }
-
-
-
-
+.btn-outline:active {
+	border: 1px solid #EB0098;
+	color: #EB0098;
+  box-shadow: 5px 2px 12px 0px rgba(0,0,0,0.1);
+  transform: translateY(2px);
+  font-weight: 700;
+}
 
 .intro, .cta {
 	text-align: center;
@@ -111,6 +130,12 @@ p {
 	width:100%;
 	padding: 5% 17%;
 }
+.fade {
+   opacity: 1;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   }
 .numbers {
 	display: flex;
 	justify-content: space-around;
@@ -124,7 +149,7 @@ p {
 	display: flex;
 	flex-wrap: wrap;
 }
-/*.content img,*/ .full-width {
+.full-width {
 	width: 100%;
 }
 
@@ -180,7 +205,9 @@ ul { list-style: none; }
 	font-size: 30px;
 	padding: 20px 15px 0 0;
 }
-
+.contact li:hover, .social li:hover{
+	color: #FF52BF;
+}
 
 input[type=email] {
   flex: 75%;
@@ -188,28 +215,26 @@ input[type=email] {
   margin-right: 30px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  /*align-items: stretch;*/
 }
 
 input[type=submit] {
 	flex: 25%;
-
   background-color: #FF52BF;
   color: #fff;
   padding: 12px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  /*float: right;*/
   font-weight: 600;
 	text-decoration: none;
-
 	font-size: 1rem;
-
+	border: 1px solid transparent;
 }
 
 input[type=submit]:hover {
-  background-color: pink;
+	border: 1px solid #FF52BF;
+	background-color: #fff;
+	color: #FF52BF;
 }
 
 div form {
@@ -224,9 +249,69 @@ div form {
 
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .col-25, .col-75, input[type=submit] {
     width: 100%;
     margin-top: 0;
+  }
+}
+
+
+/*375   1440*/
+@media screen and (min-width: 378px) {
+  .growTop {
+  	background-image: url("images/bg-section-top-desktop-1.svg");
+	  width: 100%;
+	  height: 165px;
+	}
+	.growBtm {
+  	background-image: url("images/bg-section-bottom-desktop-1.svg");
+  	width: 100%;
+	  height: 139px;
+	}
+	.usersTop {
+  	background-image: url("images/bg-section-top-desktop-2.svg");
+	  width: 100%;
+	  height: 156px;
+	}
+	.usersBtm {
+  	background-image: url("images/bg-section-bottom-desktop-2.svg");
+	  width: 100%;
+	  height: 139px;
+	}
+	.footerTop {
+  	background-image: url("images/bg-footer-top-desktop.svg");
+	  width: 100%;
+	  height: 158px;
+	  margin-top: 5%;
+	}
+}
+
+@media screen and (max-width: 375px) {
+  .growTop {
+  	background-image: url("images/bg-section-top-mobile-1.svg");
+	  height: 112px;
+	  width: 100%;
+	}
+	.growBtm {
+  	background-image: url("images/bg-section-bottom-mobile-1.svg");
+	  height: 52px;
+	  width: 100%;
+	}
+	.usersTop {
+  	background-image: url("images/bg-section-top-mobile-2.svg");
+	  height: 103px;
+	  width: 100%;
+	}
+	.usersBtm {
+  	background-image: url("images/bg-section-bottom-mobile-2.svg");
+	  height: 101px;
+	  width: 100%;
+	}
+	.footerTop {
+    background: url("images/bg-footer-top-mobile.svg");
+    height: 53px;
+    width: 100%;
+    margin-top: 5%;
   }
 }
