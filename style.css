@@ -15,11 +15,7 @@ Family: Open Sans
 Weights: 400, 600, 700*/
 
 /* Normalize */
-* { 
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0; 
-}
+* { box-sizing: border-box; margin: 0; padding: 0; }
 body {
 	margin: 0;
   font-family: 'Open Sans', sans-serif;
@@ -35,32 +31,21 @@ header {
   align-self: center;
   justify-content: space-between;
 }
-
-main {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
+main { display: flex; flex-wrap: wrap; justify-content: center; }
 h1, h2 {
 	font-family: 'Poppins', sans-serif;
-	/*font-size: 2.75rem;*/
 	font-weight: 700;
 	color: #002D38;	
 }
 h1 { font-size: 5rem; }
 h2 { font-size: 2.75rem; }
-
 h3, h4, h5, h6 {
 	font-family: 'Open Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
 }
-
-p {	
-	font-size: 1.25rem;
-}
-
+p {	font-size: 1.25rem; } 
 .btn, .btn-outline {
 	border-radius: 50px;
 	border: none;
@@ -85,12 +70,7 @@ p {
 	color: #FF52BF;
 }
 .btn:active {
-/*  border: 1px solid #FF52BF;
-	background-color: #fff;
-	color: #FF52BF;
-  box-shadow: 4px 4px 12px 0px rgba(0,0,0,0.1);
-  transform: translateY(4px);*/
-  	border: 1px solid #EB0098;
+	border: 1px solid #EB0098;
 	color: #EB0098;
   box-shadow: 5px 2px 12px 0px rgba(0,0,0,0.1);
   transform: translateY(2px);
@@ -106,10 +86,7 @@ p {
   font-size: 1rem;
   font-weight: 400;
 }
-.btn-outline:hover {
-	border: 1px solid #EB0098;
-	color: #EB0098;
-}
+.btn-outline:hover { border: 1px solid #EB0098; color: #EB0098; }
 .btn-outline:active {
 	border: 1px solid #EB0098;
 	color: #EB0098;
@@ -117,56 +94,38 @@ p {
   transform: translateY(2px);
   font-weight: 700;
 }
-
-.intro, .cta {
-	text-align: center;
-}
-.intro h2, .cta h2 {
-	margin: 35px;
-}
+.intro, .cta { text-align: center; }
+.intro h2, .cta h2 { margin: 35px; }
 .intro p, .cta p { margin: 0 27% 5% 27%; }
-
-.cover img {
-	width:100%;
-	padding: 5% 17%;
-}
+.cover img { width:100%; padding: 5% 17%; }
 .fade {
-   opacity: 1;
-   transition: opacity .25s ease-in-out;
-   -moz-transition: opacity .25s ease-in-out;
-   -webkit-transition: opacity .25s ease-in-out;
-   }
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
 .numbers {
 	display: flex;
 	justify-content: space-around;
 	width: 100%;
 }
 .numbers h1 {	margin: 0; }
-
 .numbers img { width: 24%; }
-
 .content, footer {
 	display: flex;
 	flex-wrap: wrap;
 }
-.full-width {
-	width: 100%;
-}
-
-.grow, .users {
-	background-color: #F5FAFF;
-}
+.full-width { width: 100%; }
+.grow, .users { background-color: #F5FAFF; }
 .info-columns {
   display: flex;
   align-items: center;
   padding: 5% 10%;
 }
-
 .column { flex: 50%; }
 .column p { font-size: 1rem; }
 .pad-right { margin-right: 5% }
 .pad-left { margin-left: 5%;  }
-
 .footer {
 	display: flex;
 	justify-content: space-around;
@@ -175,13 +134,11 @@ p {
 	color: #fff;
 	margin:0;
 }
-
 .footer-columns {
   align-items: flex-start;
   justify-content: space-between;
   padding: 5% 5%;
 }
-
 .footer-columns p {
 	padding: 0 35% 0 0;
 	font-size: 1rem;
@@ -192,23 +149,15 @@ p {
 }
 footer h2 { color: #fff; }
 footer h3 { padding: 15px 0; }
-
 .contact img { width: 3%; }
 ul { list-style: none; }
-
-.contact li {
-	margin: 25px 0;
-}
-
+.contact li { margin: 25px 0; }
 .social li {
 	display: inline-block;
 	font-size: 30px;
 	padding: 20px 15px 0 0;
 }
-.contact li:hover, .social li:hover{
-	color: #FF52BF;
-}
-
+.contact li:hover, .social li:hover{ color: #FF52BF; }
 input[type=email] {
   flex: 75%;
   padding: 12px;
@@ -216,7 +165,6 @@ input[type=email] {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 input[type=submit] {
 	flex: 25%;
   background-color: #FF52BF;
@@ -230,35 +178,15 @@ input[type=submit] {
 	font-size: 1rem;
 	border: 1px solid transparent;
 }
-
 input[type=submit]:hover {
 	border: 1px solid #FF52BF;
 	background-color: #fff;
 	color: #FF52BF;
 }
-
-div form {
-	/*align-items: stretch;*/
-	display: flex;
-	align-content: stretch;
-	/*padding: 0 30% 10% 0;*/
-  /*border-radius: 5px;*/
-  /*background-color: #f2f2f2;*/
-  /*padding: 20px;*/
-}
-
+div form { display: flex; align-content: stretch; }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 375px) {
-  .col-25, .col-75, input[type=submit] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-
-/*375   1440*/
-@media screen and (min-width: 378px) {
+@media screen and (min-width: 376px) {
   .growTop {
   	background-image: url("images/bg-section-top-desktop-1.svg");
 	  width: 100%;
@@ -288,6 +216,39 @@ div form {
 }
 
 @media screen and (max-width: 375px) {
+	body { font-size: 0.8rem; }
+	header { margin: 40px 5% 20% 5%; }
+	header img { width: 35%; }
+	h1 { font-size: 4rem; }
+	h2 { font-size: 1.6rem; }
+	h3, h4, h5, h6 { font-size: 1.2rem; }
+	p {	font-size: 1rem; }
+	section, .flow { flex-direction: column; }
+	.grow, .users { flex-direction: column-reverse; }
+	.content .column { text-align: center; }
+	.column img { margin: 10% 0 20% 0; }
+	.numbers { width: auto; justify-content: center; }
+	.numbers div { margin-bottom: 25%; }
+	.intro p, .cta p { margin: 10% 10% 15% 10%; line-height: 150%; }
+	.cover img { margin-bottom: 15%; }
+	.btn, .btn-outline {
+		-webkit-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+		box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
+	}
+	.btn { padding: 4% 20%; font-size: 0.8rem; }
+	.btn-outline { padding: 5px 20px; font-size: 0.8rem; }
+	.footer { flex-direction: column-reverse; }
+	.footer-columns p.pad, .footer-columns p { padding: 0; }
+	div.column.pad-left { margin-left: 0; }
+	form { flex-wrap: wrap; justify-content: flex-end;}
+	input[type=email] { flex: 100%; margin: 10% 0 5% 0;	}
+	input[type=submit] { flex: 0; font-size: 0.8rem; }
+	.footer-columns img { margin: 0; height: 20px; width: auto;}
+	.footer .column { text-align: left; }
+	.footer .column li { font-size: 0.9rem; }
+	.footer .column .social li { font-size: 30px; }
+
   .growTop {
   	background-image: url("images/bg-section-top-mobile-1.svg");
 	  height: 112px;
@@ -310,7 +271,7 @@ div form {
 	}
 	.footerTop {
     background: url("images/bg-footer-top-mobile.svg");
-    height: 53px;
+    height: 52px;
     width: 100%;
     margin-top: 5%;
   }
