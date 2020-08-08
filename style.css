@@ -185,7 +185,7 @@ input[type=submit]:hover {
 }
 div form { display: flex; align-content: stretch; }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 376 wide, change divider images */
 @media screen and (min-width: 376px) {
   .growTop {
   	background-image: url("images/bg-section-top-desktop-1.svg");
@@ -214,9 +214,9 @@ div form { display: flex; align-content: stretch; }
 	  margin-top: 5%;
 	}
 }
-
-@media screen and (max-width: 375px) {
-	body { font-size: 0.8rem; }
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+	body { font-size: 0.8rem; width: 100%;}
 	header { margin: 40px 5% 20% 5%; }
 	header img { width: 35%; }
 	h1 { font-size: 4rem; }
@@ -236,7 +236,7 @@ div form { display: flex; align-content: stretch; }
 		-moz-box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
 		box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.2);
 	}
-	.btn { padding: 4% 20%; font-size: 0.8rem; }
+	.btn { padding: 4% 10%; font-size: 0.8rem; }
 	.btn-outline { padding: 5px 20px; font-size: 0.8rem; }
 	.footer { flex-direction: column-reverse; }
 	.footer-columns p.pad, .footer-columns p { padding: 0; }
