@@ -214,6 +214,34 @@ div form { display: flex; align-content: stretch; }
 	  margin-top: 5%;
 	}
 }
+@media screen and (max-width: 375px) {
+	.growTop {
+		background-image: url("images/bg-section-top-mobile-1.svg");
+		height: 112px;
+		width: 100%;
+	  }
+	  .growBtm {
+		background-image: url("images/bg-section-bottom-mobile-1.svg");
+		height: 52px;
+		width: 100%;
+	  }
+	  .usersTop {
+		background-image: url("images/bg-section-top-mobile-2.svg");
+		height: 103px;
+		width: 100%;
+	  }
+	  .usersBtm {
+		background-image: url("images/bg-section-bottom-mobile-2.svg");
+		height: 101px;
+		width: 100%;
+	  }
+	  .footerTop {
+	  background: url("images/bg-footer-top-mobile.svg");
+	  height: 52px;
+	  width: 100%;
+	  margin-top: 5%;
+	}
+}
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) {
 	body { font-size: 0.8rem; width: 100%;}
@@ -248,31 +276,4 @@ div form { display: flex; align-content: stretch; }
 	.footer .column { text-align: left; }
 	.footer .column li { font-size: 0.9rem; }
 	.footer .column .social li { font-size: 30px; }
-
-  .growTop {
-  	background-image: url("images/bg-section-top-mobile-1.svg");
-	  height: 112px;
-	  width: 100%;
-	}
-	.growBtm {
-  	background-image: url("images/bg-section-bottom-mobile-1.svg");
-	  height: 52px;
-	  width: 100%;
-	}
-	.usersTop {
-  	background-image: url("images/bg-section-top-mobile-2.svg");
-	  height: 103px;
-	  width: 100%;
-	}
-	.usersBtm {
-  	background-image: url("images/bg-section-bottom-mobile-2.svg");
-	  height: 101px;
-	  width: 100%;
-	}
-	.footerTop {
-    background: url("images/bg-footer-top-mobile.svg");
-    height: 52px;
-    width: 100%;
-    margin-top: 5%;
-  }
 }
