@@ -191,27 +191,32 @@ div form { display: flex; align-content: stretch; }
   	background-image: url("images/bg-section-top-desktop-1.svg");
 	  width: 100%;
 	  height: 165px;
+		background-repeat: round;
 	}
 	.growBtm {
   	background-image: url("images/bg-section-bottom-desktop-1.svg");
   	width: 100%;
 	  height: 139px;
+		background-repeat: round;
 	}
 	.usersTop {
   	background-image: url("images/bg-section-top-desktop-2.svg");
 	  width: 100%;
 	  height: 156px;
+		background-repeat: round;
 	}
 	.usersBtm {
   	background-image: url("images/bg-section-bottom-desktop-2.svg");
 	  width: 100%;
 	  height: 139px;
+		background-repeat: round;
 	}
 	.footerTop {
   	background-image: url("images/bg-footer-top-desktop.svg");
 	  width: 100%;
 	  height: 158px;
 	  margin-top: 5%;
+		background-repeat: round;
 	}
 }
 @media screen and (max-width: 375px) {
@@ -219,27 +224,32 @@ div form { display: flex; align-content: stretch; }
 		background-image: url("images/bg-section-top-mobile-1.svg");
 		height: 112px;
 		width: 100%;
+		background-repeat: round;
 	  }
 	  .growBtm {
 		background-image: url("images/bg-section-bottom-mobile-1.svg");
 		height: 52px;
 		width: 100%;
+		background-repeat: round;
 	  }
 	  .usersTop {
 		background-image: url("images/bg-section-top-mobile-2.svg");
 		height: 103px;
 		width: 100%;
+		background-repeat: round;
 	  }
 	  .usersBtm {
 		background-image: url("images/bg-section-bottom-mobile-2.svg");
 		height: 101px;
 		width: 100%;
+		background-repeat: round;
 	  }
 	  .footerTop {
 	  background: url("images/bg-footer-top-mobile.svg");
 	  height: 52px;
 	  width: 100%;
 	  margin-top: 5%;
+		background-repeat: round;
 	}
 }
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
